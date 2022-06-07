@@ -12,11 +12,11 @@ const StartGameScreen = () => {
         autoCapitalize="none"
         autoCorrect={false}
       />
-      <View style={buttonsContainer}>
-        <View style={buttonsContainer}>
+      <View style={styles.buttonsContainer}>
+        <View style={styles.buttonsContainer}>
           <PrimaryButton>Reset</PrimaryButton>
         </View>
-        <View style={buttonsContainer}>
+        <View style={styles.buttonsContainer}>
           <PrimaryButton>Confirm</PrimaryButton>
         </View>
       </View>
