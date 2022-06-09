@@ -5,7 +5,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import StartGameScreen from "./screens/StartGameScreen";
 import GameScreen from "./screens/GameScreen";
 
-import { Colors } from "./screens/constants/Colors";
+import { Colors } from "./constants/Colors";
 
 export default function App() {
   const [userNumber, setUserNumber] = useState(null);
@@ -26,7 +26,7 @@ export default function App() {
       >
         <SafeAreaView style={styles.rootScreen}>
           {userNumber ? (
-            <GameScreen />
+            <GameScreen userNumber={userNumber} />
           ) : (
             <StartGameScreen onConfirmNumber={pickedNumberHandler} />
           )}
